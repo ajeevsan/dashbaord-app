@@ -73,11 +73,6 @@ export const useStyles = makeStyles((theme) => ({
     color: colors.baselight
   },
 
-  //! Graph Style
-  graphCardStyle: {
-    borderRadius: "1rem",
-  },
-
   displayCard: {
     position: "relative",
     padding: "0px !important",
@@ -132,9 +127,4 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
 
-  //! Graph Style
-  graphStyle: {
-    backgroundColor: "#FFF5E1",
-    borderRadius: "2rem",
-  },
 }));

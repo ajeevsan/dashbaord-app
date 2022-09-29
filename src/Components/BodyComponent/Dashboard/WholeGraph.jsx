@@ -27,14 +27,14 @@ export default function WholeGraph() {
           label: "Surface",
           data: fakeArrayGenrator({ length: 30, digit: 100 }),
           borderColor: red[500],
-          fill: false,
+          fill: true,
           tension: 0.5,
         },
         {
           label: "Body Fitting",
           data: fakeArrayGenrator({ length: 30, digit: 100 }),
           borderColor: green[500],
-          fill: false,
+          fill: true,
           tension: 0.5,
         },
         {
@@ -42,21 +42,21 @@ export default function WholeGraph() {
           data: fakeArrayGenrator({ length: 30, digit: 100 }),
           // indexLable:{} ,
           borderColor: yellow[500],
-          fill: false,
+          fill: true,
           tension: 0.5,
         },
         {
           label: "Welding",
           data: fakeArrayGenrator({ length: 30, digit: 100 }),
           borderColor: blue[200],
-          fill: false,
+          fill: true,
           tension: 0.5,
         },
         {
           label: "Water Leaks",
           data: fakeArrayGenrator({ length: 30, digit: 100 }),
           borderColor: green[200],
-          fill: false,
+          fill: true,
           tension: 0.5,
         },
       ],
@@ -69,7 +69,6 @@ export default function WholeGraph() {
         {
           label: "DeskTop",
           data: fakeArrayGenrator({ length: 5, digit: 100 }),
-          borderColor: [blue[50]],
           backgroundColor: [
             blue["A200"],
             blue[400],
@@ -100,7 +99,7 @@ export default function WholeGraph() {
       dataSets: [
         {
           label: "Total DPV",
-          data: fakeArrayGenrator({ length: 4, digit: 1000 }),
+          data: fakeArrayGenrator({ length: 5, digit: 1000 }),
           borderColor: red[500],
           backgroundColor: red[500],
           fill: true,
@@ -108,7 +107,7 @@ export default function WholeGraph() {
         },
         {
           label: "Under Body",
-          data: fakeArrayGenrator({ length: 4, digit: 500 }),
+          data: fakeArrayGenrator({ length: 5, digit: 500 }),
           borderColor: green[500],
           backgroundColor: green[500],
           fill: true,
@@ -116,7 +115,7 @@ export default function WholeGraph() {
         },
         {
           label: "Main Body",
-          data: fakeArrayGenrator({ length: 4, digit: 500 }),
+          data: fakeArrayGenrator({ length: 5, digit: 500 }),
           // indexLable:{} ,
           borderColor: yellow[500],
           backgroundColor: yellow[500],
@@ -125,7 +124,7 @@ export default function WholeGraph() {
         },
         {
           label: "Shell Body Sub-Line",
-          data: fakeArrayGenrator({ length: 4, digit: 500 }),
+          data: fakeArrayGenrator({ length: 5, digit: 500 }),
           borderColor: blue[200],
           backgroundColor: blue[200],
           fill: true,
@@ -133,7 +132,7 @@ export default function WholeGraph() {
         },
         {
           label: "Shell Body Main-Line",
-          data: fakeArrayGenrator({ length: 4, digit: 500 }),
+          data: fakeArrayGenrator({ length: 5, digit: 500 }),
           borderColor: green[200],
           backgroundColor: green[200],
           fill: true,
@@ -141,7 +140,7 @@ export default function WholeGraph() {
         },
         {
           label: "Side Member",
-          data: fakeArrayGenrator({ length: 4, digit: 500 }),
+          data: fakeArrayGenrator({ length: 5, digit: 500 }),
           borderColor: green[200],
           backgroundColor: green[200],
           fill: true,
@@ -160,36 +159,35 @@ export default function WholeGraph() {
           label: "Surface",
           data: fakeArrayGenrator({ length: 30, digit: 100 }),
           borderColor: red[500],
-          fill: false,
+          fill: true,
           tension: 0.5,
         },
         {
           label: "Body Fitting",
           data: fakeArrayGenrator({ length: 30, digit: 100 }),
           borderColor: green[500],
-          fill: false,
+          fill: true,
           tension: 0.5,
         },
         {
           label: "Missing & Wrong Part",
           data: fakeArrayGenrator({ length: 30, digit: 100 }),
-          // indexLable:{} ,
           borderColor: yellow[500],
-          fill: false,
+          fill: true,
           tension: 0.5,
         },
         {
           label: "Welding",
           data: fakeArrayGenrator({ length: 30, digit: 100 }),
           borderColor: blue[200],
-          fill: false,
+          fill: true,
           tension: 0.5,
         },
         {
           label: "Water Leaks",
           data: fakeArrayGenrator({ length: 30, digit: 100 }),
           borderColor: green[200],
-          fill: false,
+          fill: true,
           tension: 0.5,
         },
       ],
@@ -213,6 +211,7 @@ export default function WholeGraph() {
   }, [fetched]);
   return (
     <Grid container className={classes.section} spacing={1}>
+      {/* DPV Report */}
       <Grid item xs={12} sm={7} md={7} className={classes.graphStyle}>
         <Card component={Paper}>
           <CardContent>

@@ -32,7 +32,6 @@ export default function BlogPost() {
   }, [Fetched]);
   return (
     <Box mt={2}>
-      <PageHeader label="Posts" title="Blog Posts" />
       <Grid container spacing={1}>
         {Posts.length <= 0 ? (
           <Typography component="p" align="center" style={{ width: "100%" }}>
