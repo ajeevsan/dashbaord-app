@@ -98,15 +98,15 @@ export default function WholeGraph() {
       },
       dataSets: [
         {
-          label: "Total DPV",
-          data: fakeArrayGenrator({ length: 5, digit: 1000 }),
+          label: "Surface",
+          data: fakeArrayGenrator({ length: 5, digit: 500 }),
           borderColor: red[500],
           backgroundColor: red[500],
           fill: true,
           tension: 0.5,
         },
         {
-          label: "Under Body",
+          label: "Body Fitting",
           data: fakeArrayGenrator({ length: 5, digit: 500 }),
           borderColor: green[500],
           backgroundColor: green[500],
@@ -114,7 +114,7 @@ export default function WholeGraph() {
           tension: 0.5,
         },
         {
-          label: "Main Body",
+          label: "Missing & Wrong Parts",
           data: fakeArrayGenrator({ length: 5, digit: 500 }),
           // indexLable:{} ,
           borderColor: yellow[500],
@@ -123,7 +123,7 @@ export default function WholeGraph() {
           tension: 0.5,
         },
         {
-          label: "Shell Body Sub-Line",
+          label: "Welding",
           data: fakeArrayGenrator({ length: 5, digit: 500 }),
           borderColor: blue[200],
           backgroundColor: blue[200],
@@ -131,15 +131,7 @@ export default function WholeGraph() {
           tension: 0.5,
         },
         {
-          label: "Shell Body Main-Line",
-          data: fakeArrayGenrator({ length: 5, digit: 500 }),
-          borderColor: green[200],
-          backgroundColor: green[200],
-          fill: true,
-          tension: 0.5,
-        },
-        {
-          label: "Side Member",
+          label: "Water Leaks",
           data: fakeArrayGenrator({ length: 5, digit: 500 }),
           borderColor: green[200],
           backgroundColor: green[200],
@@ -231,7 +223,7 @@ export default function WholeGraph() {
           </CardContent>
         </Card>
       </Grid>
-      {/* Master Report */}
+      {/* DPV by Category  */}
       <Grid item xs={12} sm={5} md={5}>
         <Card component={Paper}>
           <CardContent>
@@ -251,11 +243,11 @@ export default function WholeGraph() {
           </CardContent>
         </Card>
       </Grid>
-      {/* Test Report */}
-      <Grid item xs={12} sm={7} md={6}>
+      {/* Master Report */}
+      <Grid item xs={12} sm={7} md={12}>
         <Card component={Paper}>
           <CardContent>
-            <Typography variant="h6" className={classes.cardTitle} align="left">
+            <Typography variant="h6" className={classes.cardTitle} align="center">
               Master Report
             </Typography>
           </CardContent>
@@ -263,15 +255,16 @@ export default function WholeGraph() {
           <CardContent>
             <canvas
               id="testViewGraph"
-              className={classes.generalGraph}
+              className={classes.bigGraph}
             ></canvas>
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={12} sm={7} md={6}>
+      {/* Parato Report  */}
+      <Grid item xs={12} sm={7} md={12}>
         <Card component={Paper}>
           <CardContent>
-            <Typography variant="h6" className={classes.cardTitle} align="left">
+            <Typography variant="h6" className={classes.cardTitle} align="center">
               Test Report
             </Typography>
           </CardContent>
@@ -279,7 +272,7 @@ export default function WholeGraph() {
           <CardContent>
             <canvas
               id="testViewGraph1"
-              className={classes.generalGraph}
+              className={classes.bigGraph}
             ></canvas>
           </CardContent>
         </Card>

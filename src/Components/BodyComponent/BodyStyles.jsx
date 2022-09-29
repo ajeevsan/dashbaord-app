@@ -114,6 +114,10 @@ export const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "300px",
   },
+  bigGraph: {
+    width: "100%",
+    height: "500px"
+  },
   stagedColumn: {
     width: "100%",
     height: "300px",

@@ -11,7 +11,7 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import { PageHeader } from "../../Common/Components";
+// import { PageHeader } from "../../Common/Components";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import { GetPosts } from "../../Common/requestApi";
 import { useStyles } from "./BodyStyles";
@@ -67,15 +67,6 @@ export default function BlogPost() {
                     {item.text}
                   </Typography>
                 </CardContent>
-                <CardActions>
-                  <Button
-                    startIcon={<FavoriteIcon color="secondary" />}
-                    size="small"
-                    color="secondary"
-                  >
-                    {item.likes}
-                  </Button>
-                </CardActions>
               </Card>
             </Grid>
           ))
