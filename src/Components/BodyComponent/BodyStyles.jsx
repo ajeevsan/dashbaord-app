@@ -64,6 +64,9 @@ export const useStyles = makeStyles((theme) => ({
     // backgroundColor: "#FFF5E1",
     borderRadius: "2rem",
   },
+  cardDetails: {
+    color: colors.baselight
+  },
 
   //! Graph Style
   graphCardStyle: {

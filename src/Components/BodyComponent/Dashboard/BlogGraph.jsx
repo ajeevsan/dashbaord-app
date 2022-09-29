@@ -64,7 +64,7 @@ export default function BlogGraph() {
     },
     {
       id: "deviceOverViewGraph",
-      type: "pie",
+      type: "doughnut",
       dataSets: [
         {
           label: "DeskTop",
@@ -219,6 +219,9 @@ export default function BlogGraph() {
             <Typography variant="h6" className={classes.cardTitle} align="left">
               DPV (Defects Per Vehicle) Report
             </Typography>
+            <Typography variant="p" className={classes.cardDetails}>
+              Total Category defects
+            </Typography>
           </CardContent>
           <Divider />
           <CardContent>
@@ -236,6 +239,9 @@ export default function BlogGraph() {
             <Typography variant="h6" className={classes.cardTitle} align="left">
               DPV by Category Reports
             </Typography>
+            <Typography varient='p' className={classes.cardDetails}>
+              Category DPV
+            </Typography>
           </CardContent>
           <Divider />
           <CardContent>
@@ -247,7 +253,7 @@ export default function BlogGraph() {
         </Card>
       </Grid>
       {/* Test Report */}
-      <Grid item xs={12} sm={7} md={7}>
+      <Grid item xs={12} sm={7} md={6}>
         <Card component={Paper}>
           <CardContent>
             <Typography variant="h6" className={classes.cardTitle} align="left">
@@ -263,7 +269,7 @@ export default function BlogGraph() {
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={12} sm={7} md={7}>
+      <Grid item xs={12} sm={7} md={6}>
         <Card component={Paper}>
           <CardContent>
             <Typography variant="h6" className={classes.cardTitle} align="left">

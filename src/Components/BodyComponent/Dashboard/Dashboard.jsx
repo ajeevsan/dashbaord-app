@@ -34,48 +34,6 @@ export default function Dashboard() {
     },
   ];
 
-  // const GraphData = [
-  //   {
-  //     label: "Total DPV",
-  //     data: fakeArrayGenrator({ length: 10, digit: 100 }),
-  //     bgColor: lightBlue[50],
-  //     brColor: blue["A200"],
-  //   },
-  //   {
-  //     label: "Surface DPV",
-  //     data: fakeArrayGenrator({ length: 10, digit: 100 }),
-  //     bgColor: blue[50],
-  //     brColor: blue["A700"],
-  //   },
-  //   {
-  //     label: "Total No. of Vehicals",
-  //     data: fakeArrayGenrator({ length: 10, digit: 100 }),
-  //     bgColor: green[50],
-  //     brColor: green["A400"],
-  //   },
-  //   {
-  //     label: "Total No. of Defects",
-  //     data: fakeArrayGenrator({ length: 10, digit: 100 }),
-  //     bgColor: teal[50],
-  //     brColor: teal["A400"],
-  //   },
-  // ];
-
-  //updating the graph
-  // useEffect(() => {
-  //   if (!hasFetched) {
-  //     GraphData.map((item) =>
-  //       GraphComponent({
-  //         id: item.label,
-  //         data: item.data,
-  //         bgColor: item.bgColor,
-  //         brColor: item.brColor,
-  //       })
-  //     );
-  //     setHasFetched(true);
-  //   }
-  // }, [DisplayData]);
-
   return (
     <Box mt={2} className={classes.wholePage}>
       {/* //title section  */}
