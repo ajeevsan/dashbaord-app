@@ -2,17 +2,11 @@ import React from "react";
 import {
   AppBar,
   Box,
-  Hidden,
-  IconButton,
   Toolbar,
   Typography,
 } from "@material-ui/core";
 import { useStyles } from "./HeaderStyle";
-import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
-
-// import Notification from "./ActionTab/Notification";
-// import Profile from "./ActionTab/Profile";
-// import Messages from "./ActionTab/Messages";
+// import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 
 export default function NavbarComponent({ handleDrawerToggle }) {
   const classes = useStyles();
@@ -22,14 +16,10 @@ export default function NavbarComponent({ handleDrawerToggle }) {
       <Toolbar className={classes.toolbar}>
         <Box style={{ display: "flex" }}>
           <Typography variant='h6' className={classes.logo}>
-            {"Hi, Admin"}
+            {"Welcome, Admin"}
           </Typography>
         </Box>
-        <Hidden mdUp>
-          <IconButton color='inherit' onClick={handleDrawerToggle}>
-            <MenuRoundedIcon />
-          </IconButton>
-        </Hidden>
+       
       </Toolbar>
     </AppBar>
   );

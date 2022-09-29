@@ -9,7 +9,6 @@ import {
   import { blue, green, red, yellow } from "@material-ui/core/colors";
   import React from "react";
   import { fakeArrayGenrator } from "../../../Common/fakeDataGenetator";
-  // import { lineGraphComponent, paratoReport } from "../../../Common/GraphComponent";
   import { useStyles } from "../BodyStyles";
 
 function MasterGraph() {

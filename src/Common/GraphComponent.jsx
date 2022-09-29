@@ -28,6 +28,10 @@ export function lineGraphComponent({ id, type, dataSets, xAxisLabels }) {
       },
       plugins: {
         legend: { position: "bottom" },
+        labels: {
+          render: 'value',
+          fontColor: ['green', 'white', 'red']
+        }
       },
       responsive: true,
       maintainAspectRatio: false,

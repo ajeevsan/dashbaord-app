@@ -12,7 +12,7 @@ import { fakeArrayGenrator } from "../../../Common/fakeDataGenetator";
 import { lineGraphComponent } from "../../../Common/GraphComponent";
 import { useStyles } from "../BodyStyles";
 
-export default function BlogGraph() {
+export default function WholeGraph() {
   const classes = useStyles();
   const [fetched, setFetched] = useState(false);
 
@@ -100,7 +100,7 @@ export default function BlogGraph() {
       dataSets: [
         {
           label: "Total DPV",
-          data: fakeArrayGenrator({ length: 30, digit: 1000 }),
+          data: fakeArrayGenrator({ length: 4, digit: 1000 }),
           borderColor: red[500],
           backgroundColor: red[500],
           fill: true,
@@ -108,7 +108,7 @@ export default function BlogGraph() {
         },
         {
           label: "Under Body",
-          data: fakeArrayGenrator({ length: 30, digit: 500 }),
+          data: fakeArrayGenrator({ length: 4, digit: 500 }),
           borderColor: green[500],
           backgroundColor: green[500],
           fill: true,
@@ -116,7 +116,7 @@ export default function BlogGraph() {
         },
         {
           label: "Main Body",
-          data: fakeArrayGenrator({ length: 30, digit: 500 }),
+          data: fakeArrayGenrator({ length: 4, digit: 500 }),
           // indexLable:{} ,
           borderColor: yellow[500],
           backgroundColor: yellow[500],
@@ -125,7 +125,7 @@ export default function BlogGraph() {
         },
         {
           label: "Shell Body Sub-Line",
-          data: fakeArrayGenrator({ length: 30, digit: 500 }),
+          data: fakeArrayGenrator({ length: 4, digit: 500 }),
           borderColor: blue[200],
           backgroundColor: blue[200],
           fill: true,
@@ -133,7 +133,7 @@ export default function BlogGraph() {
         },
         {
           label: "Shell Body Main-Line",
-          data: fakeArrayGenrator({ length: 30, digit: 500 }),
+          data: fakeArrayGenrator({ length: 4, digit: 500 }),
           borderColor: green[200],
           backgroundColor: green[200],
           fill: true,
@@ -141,7 +141,7 @@ export default function BlogGraph() {
         },
         {
           label: "Side Member",
-          data: fakeArrayGenrator({ length: 30, digit: 500 }),
+          data: fakeArrayGenrator({ length: 4, digit: 500 }),
           borderColor: green[200],
           backgroundColor: green[200],
           fill: true,
@@ -213,7 +213,7 @@ export default function BlogGraph() {
   }, [fetched]);
   return (
     <Grid container className={classes.section} spacing={1}>
-      <Grid item xs={12} sm={7} md={7}>
+      <Grid item xs={12} sm={7} md={7} className={classes.graphStyle}>
         <Card component={Paper}>
           <CardContent>
             <Typography variant="h6" className={classes.cardTitle} align="left">

@@ -1,19 +1,11 @@
 import React from "react";
 import { Box, Card, CardContent, Grid, Typography } from "@material-ui/core";
-// import { green, red } from "@material-ui/core/colors";
-// import { blue, lightBlue, teal} from '@material-ui/core/colors'
-// import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-// import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
 import { useStyles } from "../BodyStyles";
-// import GraphComponent from "../../../Common/GraphComponent";
-import BlogGraph from "./BlogGraph";
-// import Section3 from "./Section3";
-// import { fakeArrayGenrator } from "../../../Common/fakeDataGenetator";
+import BlogGraph from "./WholeGraph";
 import { PageHeader } from "../../../Common/Components";
 
 export default function Dashboard() {
   const classes = useStyles();
-  // const [hasFetched, setHasFetched] = useState(false);
 
   const DisplayData = [
     {

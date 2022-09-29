@@ -36,6 +36,11 @@ export const useStyles = makeStyles((theme) => ({
     overflowY: "hidden",
   },
 
+  //! Graph
+  graphStyle: {
+    borderRadius: "25px !important",
+  },
+
   //! dashboard
   cardLabel: {
     color: colors.baseDark,

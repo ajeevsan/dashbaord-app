@@ -15,12 +15,8 @@ export default function HearderComponent() {
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
-    console.log("Jai siya ram");
   };
-  // const handleDrawerClose = () => {
-  //   setMobileOpen(false);
-  //   console.log("prem se bolo Jai siya ram");
-  // };
+  
   return (
     <Fragment>
       <NavbarComponent handleDrawerToggle={handleDrawerToggle} />
