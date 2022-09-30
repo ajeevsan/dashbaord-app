@@ -6,6 +6,12 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import StarIcon from '@mui/icons-material/Star';
 import { blue, green, red, yellow } from "@material-ui/core/colors";
 import React, { useEffect, useState } from "react";
 import { fakeArrayGenrator } from "../../../Common/fakeDataGenetator";
@@ -153,6 +159,7 @@ export default function WholeGraph() {
           borderColor: red[500],
           fill: true,
           tension: 0.5,
+          pivotRadius: 16,
         },
         {
           label: "Body Fitting",
@@ -160,6 +167,7 @@ export default function WholeGraph() {
           borderColor: green[500],
           fill: true,
           tension: 0.5,
+          pivotRadius: 16,
         },
         {
           label: "Missing & Wrong Part",
@@ -167,6 +175,7 @@ export default function WholeGraph() {
           borderColor: yellow[500],
           fill: true,
           tension: 0.5,
+          pivotRadius: 16,
         },
         {
           label: "Welding",
@@ -174,6 +183,7 @@ export default function WholeGraph() {
           borderColor: blue[200],
           fill: true,
           tension: 0.5,
+          pivotRadius: 16,
         },
         {
           label: "Water Leaks",
@@ -181,6 +191,7 @@ export default function WholeGraph() {
           borderColor: green[200],
           fill: true,
           tension: 0.5,
+          pivotRadius: 16,
         },
       ],
       xAxisLabels: ["UB", "MB", "SB SA", "SB ML", "SM"],
@@ -230,7 +241,7 @@ export default function WholeGraph() {
             <Typography variant="h6" className={classes.cardTitle} align="left">
               DPV by Category Reports
             </Typography>
-            <Typography varient='p' className={classes.cardDetails}>
+            <Typography varient="p" className={classes.cardDetails}>
               Category DPV
             </Typography>
           </CardContent>
@@ -247,33 +258,66 @@ export default function WholeGraph() {
       <Grid item xs={12} sm={7} md={12}>
         <Card component={Paper}>
           <CardContent>
-            <Typography variant="h6" className={classes.cardTitle} align="center">
+            <Typography
+              variant="h6"
+              className={classes.cardTitle}
+              align="center"
+            >
               Master Report
             </Typography>
           </CardContent>
           <Divider />
           <CardContent>
-            <canvas
-              id="testViewGraph"
-              className={classes.bigGraph}
-            ></canvas>
+            <canvas id="testViewGraph" className={classes.bigGraph}></canvas>
           </CardContent>
         </Card>
       </Grid>
       {/* Parato Report  */}
-      <Grid item xs={12} sm={7} md={12}>
+      <Grid item xs={12} sm={7} md={8}>
         <Card component={Paper}>
           <CardContent>
-            <Typography variant="h6" className={classes.cardTitle} align="center">
+            <Typography
+              variant="h6"
+              className={classes.cardTitle}
+              align="center"
+            >
               Test Report
             </Typography>
           </CardContent>
           <Divider />
           <CardContent>
-            <canvas
-              id="testViewGraph1"
-              className={classes.bigGraph}
-            ></canvas>
+            <canvas id="testViewGraph1" className={classes.bigGraph}></canvas>
+          </CardContent>
+        </Card>
+      </Grid>
+      <Grid item xs={12} sm={7} md={4}>
+        <Card component={Paper}>
+          <CardContent>
+            <Typography
+              variant="h6"
+              className={classes.cardTitle}
+              align="center"
+            >
+              Top 10 Defects Contributors
+            </Typography>
+            <List
+              sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
+              aria-label="contacts"
+            >
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <StarIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="Chelsea Otakan" />
+                </ListItemButton>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemText inset primary="Eric Hoffman" />
+                </ListItemButton>
+              </ListItem>
+            </List>
           </CardContent>
         </Card>
       </Grid>

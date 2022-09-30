@@ -15,14 +15,14 @@ export function lineGraphComponent({ id, type, dataSets, xAxisLabels }) {
         x: {
           display: type === "pie" ? false : true,
           grid: {
-            color: "fill",
+            color: "transparent",
           },
         },
 
         y: {
           display: type === "pie" ? false : true,
           grid: {
-            // color: "transparent",
+            color: "transparent",
           },
         },
       },
