@@ -41,6 +41,12 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: "25px !important",
   },
 
+  //! Master Graph Style
+  // masterCard: {
+  //   height: 'auto',
+  //   width: '31.25rem !important',
+  // },
+
   //! dashboard
   cardLabel: {
     color: colors.baseDark,
@@ -130,5 +136,12 @@ export const useStyles = makeStyles((theme) => ({
       padding: "8px 24px 16px 24px",
     },
   },
-
+  //! List Style
+  listStyle: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '500px',
+  }
 }));

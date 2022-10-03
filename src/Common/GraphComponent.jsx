@@ -17,6 +17,7 @@ export function lineGraphComponent({ id, type, dataSets, xAxisLabels }) {
           grid: {
             color: "transparent",
           },
+          stacked: true
         },
 
         y: {
@@ -24,10 +25,11 @@ export function lineGraphComponent({ id, type, dataSets, xAxisLabels }) {
           grid: {
             color: "transparent",
           },
+          stacked: true
         },
       },
       plugins: {
-        legend: { position: "bottom" },
+        legend: { position: "right" },
         labels: {
           render: 'value',
           fontColor: ['green', 'white', 'red']
