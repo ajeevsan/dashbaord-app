@@ -72,7 +72,6 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   dashboardCardsStyles: {
-    // backgroundColor: "#FFF5E1",
     borderRadius: "2rem",
   },
   cardDetails: {

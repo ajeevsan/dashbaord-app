@@ -72,5 +72,13 @@ export const useStyles = makeStyles((theme) => {
         color: `${blue[800]} !important`,
       },
     },
+    logoStyle: {
+      width: 'auto',
+      height: '5px'
+    },
+    buttonStyle: {
+      margin: '5px',
+      padding: '5px'
+    }
   };
 });

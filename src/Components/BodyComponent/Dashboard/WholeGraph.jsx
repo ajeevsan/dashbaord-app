@@ -25,7 +25,7 @@ export default function WholeGraph() {
   const [fetched, setFetched] = useState(false);
 
   const GraphData = [
-    //!this is DPV Garph
+    //! This is DPV Garph
     {
       id: "userOverViewGraph",
       options: {
@@ -564,7 +564,7 @@ export default function WholeGraph() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item md={6}>
+        <Grid item xs={12} md={6}>
           {/* Master Card 3 */}
           <Card component={Paper} >
             <CardContent>
@@ -586,7 +586,7 @@ export default function WholeGraph() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item md={6}>
+        <Grid item xs={12} md={6}>
           {/* Master Card 4 */}
           <Card component={Paper} >
             <CardContent>
@@ -608,7 +608,7 @@ export default function WholeGraph() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item md={6}>
+        <Grid item xs={12} md={6}>
           {/* Master Card 5 */}
           <Card component={Paper} >
             <CardContent>
@@ -630,7 +630,7 @@ export default function WholeGraph() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item md={6}>
+        <Grid item xs={12} md={6}>
           {/* Master Card 6 */}
           <Card component={Paper} >
             <CardContent>
@@ -662,7 +662,7 @@ export default function WholeGraph() {
               className={classes.cardTitle}
               align="center"
             >
-              Test Report
+              Parato Report
             </Typography>
           </CardContent>
           <Divider />
