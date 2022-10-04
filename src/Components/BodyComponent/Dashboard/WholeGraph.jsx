@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from '@mui/material/ListItemButton';
+import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 //TODO import ListItemText from '@mui/material/ListItemText';
 //TODO import ListItemIcon from '@mui/material/ListItemIcon';
@@ -151,13 +151,19 @@ export default function WholeGraph() {
           tension: 0.5,
         },
       ],
-      xAxisLabels: ["Surface", 'Body Fitting', 'Missing & Wrong Parts', 'Welding', 'Water Leaks'],
+      xAxisLabels: [
+        "Surface",
+        "Body Fitting",
+        "Missing & Wrong Parts",
+        "Welding",
+        "Water Leaks",
+      ],
     },
     {
-      id: 'underBodySurface',
-      type: 'bar',
+      id: "underBodySurface",
+      type: "bar",
       options: {
-        scales: {x: {title: {display: true, text: 'Category DPV'}}},
+        scales: { x: { title: { display: true, text: "Category DPV" } } },
       },
       dataSets: [
         {
@@ -202,14 +208,14 @@ export default function WholeGraph() {
           tension: 0.5,
         },
       ],
-      xAxisLabels: ["Dent", 'Bump', 'Burs', 'Spatters', 'Others'],
+      xAxisLabels: ["Dent", "Bump", "Burs", "Spatters", "Others"],
     },
 
     //TODO Shell Body Sub-line
     {
-      id: 'shellBodySubLineCDPV',
-      type: 'bar',
-      options: {x: {title: {display: true, text: 'Category DPV'}}},
+      id: "shellBodySubLineCDPV",
+      type: "bar",
+      options: { x: { title: { display: true, text: "Category DPV" } } },
       dataSets: [
         {
           label: "Surface",
@@ -253,13 +259,19 @@ export default function WholeGraph() {
           tension: 0.5,
         },
       ],
-      xAxisLabels: ["Surface", 'Body Fitting', 'Missing & Wrong Parts', 'Welding', 'Water Leaks'],
+      xAxisLabels: [
+        "Surface",
+        "Body Fitting",
+        "Missing & Wrong Parts",
+        "Welding",
+        "Water Leaks",
+      ],
     },
 
     {
-      id: 'shellBodySubLineSDPV',
-      type: 'bar',
-      options: {x: {title: {display: true, text: 'Category DPV'}}},
+      id: "shellBodySubLineSDPV",
+      type: "bar",
+      options: { x: { title: { display: true, text: "Category DPV" } } },
       dataSets: [
         {
           label: "Surface",
@@ -303,14 +315,14 @@ export default function WholeGraph() {
           tension: 0.5,
         },
       ],
-      xAxisLabels: ["Dent", 'Bump', 'Burs', 'Spatters', 'Others'],
+      xAxisLabels: ["Dent", "Bump", "Burs", "Spatters", "Others"],
     },
 
     //TODO Main Body
     {
-      id: 'mainBodyCDPV',
-      type: 'bar',
-      options: {x: {title: {display: true, text: 'Category DPV'}}},
+      id: "mainBodyCDPV",
+      type: "bar",
+      options: { x: { title: { display: true, text: "Category DPV" } } },
       dataSets: [
         {
           label: "Surface",
@@ -354,13 +366,19 @@ export default function WholeGraph() {
           tension: 0.5,
         },
       ],
-      xAxisLabels: ["Surface", 'Body Fitting', 'Missing & Wrong Parts', 'Welding', 'Water Leaks'],
+      xAxisLabels: [
+        "Surface",
+        "Body Fitting",
+        "Missing & Wrong Parts",
+        "Welding",
+        "Water Leaks",
+      ],
     },
 
     {
-      id: 'mainBodySDPV',
-      type: 'bar',
-      options: {x: {title: {display: true, text: 'Category DPV'}}},
+      id: "mainBodySDPV",
+      type: "bar",
+      options: { x: { title: { display: true, text: "Category DPV" } } },
       dataSets: [
         {
           label: "Surface",
@@ -404,7 +422,7 @@ export default function WholeGraph() {
           tension: 0.5,
         },
       ],
-      xAxisLabels: ["Dent", 'Bump', 'Burs', 'Spatters', 'Others'],
+      xAxisLabels: ["Dent", "Bump", "Burs", "Spatters", "Others"],
     },
 
     //! Test report
@@ -475,7 +493,6 @@ export default function WholeGraph() {
   }, [fetched]);
   return (
     <Grid container className={classes.section} spacing={1}>
-
       {/* DPV Report */}
       <Grid item xs={12} sm={7} md={7} className={classes.graphStyle}>
         <Card component={Paper}>
@@ -531,10 +548,9 @@ export default function WholeGraph() {
               >
                 Master Report
               </Typography>
-              <Typography
-                varient="body1"
-                className={classes.cardDetails}
-              >Under Body Category DPV</Typography>
+              <Typography varient="body1" className={classes.cardDetails}>
+                Under Body Category DPV
+              </Typography>
             </CardContent>
             <Divider />
             <CardContent>
@@ -553,20 +569,22 @@ export default function WholeGraph() {
               >
                 Master Report
               </Typography>
-              <Typography
-                varient="body1"
-                className={classes.cardDetails}
-              >Under Body Surface DPV</Typography>
+              <Typography varient="body1" className={classes.cardDetails}>
+                Under Body Surface DPV
+              </Typography>
             </CardContent>
             <Divider />
             <CardContent>
-              <canvas id="underBodySurface" className={classes.bigGraph}></canvas>
+              <canvas
+                id="underBodySurface"
+                className={classes.bigGraph}
+              ></canvas>
             </CardContent>
           </Card>
         </Grid>
         <Grid item xs={12} md={6}>
           {/* Master Card 3 */}
-          <Card component={Paper} >
+          <Card component={Paper}>
             <CardContent>
               <Typography
                 variant="h6"
@@ -575,20 +593,22 @@ export default function WholeGraph() {
               >
                 Master Report
               </Typography>
-              <Typography
-                varient="body1"
-                className={classes.cardDetails}
-              >Graphs with Categories and Group Wise</Typography>
+              <Typography varient="body1" className={classes.cardDetails}>
+                Graphs with Categories and Group Wise
+              </Typography>
             </CardContent>
             <Divider />
             <CardContent>
-              <canvas id="shellBodySubLineCDPV" className={classes.bigGraph}></canvas>
+              <canvas
+                id="shellBodySubLineCDPV"
+                className={classes.bigGraph}
+              ></canvas>
             </CardContent>
           </Card>
         </Grid>
         <Grid item xs={12} md={6}>
           {/* Master Card 4 */}
-          <Card component={Paper} >
+          <Card component={Paper}>
             <CardContent>
               <Typography
                 variant="h6"
@@ -597,20 +617,22 @@ export default function WholeGraph() {
               >
                 Master Report
               </Typography>
-              <Typography
-                varient="body1"
-                className={classes.cardDetails}
-              >Graphs with Categories and Group Wise</Typography>
+              <Typography varient="body1" className={classes.cardDetails}>
+                Graphs with Categories and Group Wise
+              </Typography>
             </CardContent>
             <Divider />
             <CardContent>
-              <canvas id="shellBodySubLineSDPV" className={classes.bigGraph}></canvas>
+              <canvas
+                id="shellBodySubLineSDPV"
+                className={classes.bigGraph}
+              ></canvas>
             </CardContent>
           </Card>
         </Grid>
         <Grid item xs={12} md={6}>
           {/* Master Card 5 */}
-          <Card component={Paper} >
+          <Card component={Paper}>
             <CardContent>
               <Typography
                 variant="h6"
@@ -619,10 +641,9 @@ export default function WholeGraph() {
               >
                 Master Report
               </Typography>
-              <Typography
-                varient="body1"
-                className={classes.cardDetails}
-              >Category DPV</Typography>
+              <Typography varient="body1" className={classes.cardDetails}>
+                Category DPV
+              </Typography>
             </CardContent>
             <Divider />
             <CardContent>
@@ -632,7 +653,7 @@ export default function WholeGraph() {
         </Grid>
         <Grid item xs={12} md={6}>
           {/* Master Card 6 */}
-          <Card component={Paper} >
+          <Card component={Paper}>
             <CardContent>
               <Typography
                 variant="h6"
@@ -641,10 +662,9 @@ export default function WholeGraph() {
               >
                 Master Report
               </Typography>
-              <Typography
-                varient="body1"
-                className={classes.cardDetails}
-              >Surface Category</Typography>
+              <Typography varient="body1" className={classes.cardDetails}>
+                Surface Category
+              </Typography>
             </CardContent>
             <Divider />
             <CardContent>
@@ -709,7 +729,8 @@ export default function WholeGraph() {
                 <ListItemButton>
                   <ListItemText align="center" primary="No. 6 Contributor" />
                 </ListItemButton>
-              </ListItem><ListItem disablePadding>
+              </ListItem>
+              <ListItem disablePadding>
                 <ListItemButton>
                   <ListItemText align="center" primary="No. 7 Contributor" />
                 </ListItemButton>
