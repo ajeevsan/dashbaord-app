@@ -4,7 +4,7 @@ import { colors } from "../Theme";
 export const useStyles = makeStyles((theme) => ({
   //! Whole Page Style
   wholePage: {
-    backgroundColor: "#B1B2FF",
+    backgroundColor: '#B1B2FF'
   },
 
   //! Card Section Style
@@ -40,6 +40,12 @@ export const useStyles = makeStyles((theme) => ({
   graphStyle: {
     borderRadius: "25px !important",
   },
+
+  //! Master Graph Style
+  // masterCard: {
+  //   height: 'auto',
+  //   width: '31.25rem !important',
+  // },
 
   //! dashboard
   cardLabel: {

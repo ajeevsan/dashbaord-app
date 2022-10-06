@@ -500,7 +500,7 @@ export default function WholeGraph() {
             <Typography variant="h6" className={classes.cardTitle} align="left">
               DPV (Defects Per Vehicle) Report
             </Typography>
-            <Typography variant="p" className={classes.cardDetails}>
+            <Typography variant="body1" className={classes.cardDetails}>
               Total Category defects
             </Typography>
           </CardContent>

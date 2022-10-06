@@ -40,10 +40,6 @@ export default function Dashboard() {
           <Grid key={i} item xs={6} sm={3} md={3}>
             <Card className={classes.dashboardCardsStyles}>
               <CardContent className={classes.displayCard}>
-                <canvas
-                  id={item.label}
-                  className={classes.displayCardGraph}
-                ></canvas>
                 <Box className={classes.cardDataContent}>
                   <Typography
                     variant="subtitle2"

@@ -12,7 +12,8 @@ import Dashboard from "../BodyComponent/Dashboard/Dashboard";
 export default function HearderComponent() {
   const classes = useStyles();
   return (
-    <Fragment>
+    <div id="pdf" >
+      <Fragment>
       <NavbarComponent />
       <Box className={classes.section}>
         <Switch>
@@ -20,5 +21,6 @@ export default function HearderComponent() {
         </Switch>
       </Box>
     </Fragment>
+    </div>
   );
 }
