@@ -12,12 +12,10 @@ import {
   Typography,
 } from "@material-ui/core";
 // import { PageHeader } from "../../Common/Components";
-import FavoriteIcon from "@material-ui/icons/Favorite";
 import { GetPosts } from "../../Common/requestApi";
 import { useStyles } from "./BodyStyles";
 
 export default function BlogPost() {
-  const classes = useStyles();
   const [Fetched, setFetched] = useState(false);
   const [Posts, setPosts] = useState([]);
 

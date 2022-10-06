@@ -8,11 +8,19 @@ import {
   Grid
 } from "@material-ui/core";
 import { useStyles } from "./HeaderStyle";
+import {jsPDF} from "jspdf";
 
 export default function NavbarComponent() {
   const classes = useStyles();
 
   function eventHandler() {
+    let canvas = document.getElementsByTagName('canvas');
+    // console.log(canvas)
+    let canvasImage = canvas.toDataURL('image/jpeg',1.0);
+    console.log(canvasImage)
+    let pdf = new jsPDF();
+    pdf.addImage(canvasImage, 'JPEG',14,15,162,158)
+    pdf.save('mychart.pdf')
     console.log("Clicked")
   }
 

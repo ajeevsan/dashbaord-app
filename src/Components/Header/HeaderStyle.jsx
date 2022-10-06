@@ -9,8 +9,9 @@ export const useStyles = makeStyles((theme) => {
       width: "35px",
       height: "35px",
       borderRadius: "50%",
-      color: "White",
-      backgroundColor: blue["A400"],
+      color: "#EEF1FF",
+      backgroundColor: blue["50"],
+      // backgroundColor: '#B1B2FF !important'
     },
 
     //header
@@ -36,6 +37,7 @@ export const useStyles = makeStyles((theme) => {
       display: "flex",
       flexFlow: "row wrap",
       justifyContent: "space-between",
+      backgroundColor: '#AAC4FF !important'
     },
     brandBox: {
       display: "flex",
@@ -47,15 +49,6 @@ export const useStyles = makeStyles((theme) => {
     listItem: {
       textTransform: "capitalize",
     },
-
-    //sidenav
-    // drawerPaper: {
-    //   width: "250px",
-    //   marginTop: "64px",
-    //   [theme.breakpoints.down("sm")]: {
-    //     marginTop: "0px",
-    //   },
-    // },
 
     navlink: {
       color: blueGrey[700],

@@ -11,15 +11,9 @@ import Dashboard from "../BodyComponent/Dashboard/Dashboard";
 
 export default function HearderComponent() {
   const classes = useStyles();
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
-  
   return (
     <Fragment>
-      <NavbarComponent handleDrawerToggle={handleDrawerToggle} />
+      <NavbarComponent />
       <Box className={classes.section}>
         <Switch>
           <Route exact path='/' render={() => <Dashboard />} />
