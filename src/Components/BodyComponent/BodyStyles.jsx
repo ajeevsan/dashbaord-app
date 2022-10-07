@@ -142,5 +142,11 @@ export const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     height: '500px',
+  },
+
+  //! Dashboard Button sytle
+  buttonStyle: {
+    margin: '5px',
+    padding: '5px'
   }
 }));
