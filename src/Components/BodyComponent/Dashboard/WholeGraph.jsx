@@ -537,7 +537,7 @@ export default function WholeGraph() {
 
       {/* Master Report : Inside this there will multiple div  */}
       <Grid container className={classes.section} spacing={1}>
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item xs={12} sm={6} md={6} className={classes.masterGraph}>
           {/* Master Card 1 */}
           <Card component={Paper}>
             <CardContent>
@@ -559,7 +559,7 @@ export default function WholeGraph() {
           </Card>
         </Grid>
         {/* Master Card 2 */}
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item xs={12} sm={6} md={6} className={classes.masterGraph}>
           <Card component={Paper}>
             <CardContent>
               <Typography
@@ -582,7 +582,7 @@ export default function WholeGraph() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} className={classes.masterGraph}>
           {/* Master Card 3 */}
           <Card component={Paper}>
             <CardContent>
@@ -606,7 +606,7 @@ export default function WholeGraph() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} className={classes.masterGraph}>
           {/* Master Card 4 */}
           <Card component={Paper}>
             <CardContent>
@@ -630,7 +630,7 @@ export default function WholeGraph() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} className={classes.masterGraph}>
           {/* Master Card 5 */}
           <Card component={Paper}>
             <CardContent>
@@ -651,7 +651,7 @@ export default function WholeGraph() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} className={classes.masterGraph}>
           {/* Master Card 6 */}
           <Card component={Paper}>
             <CardContent>

@@ -46,6 +46,7 @@ export default function Dashboard() {
       letterRendering: 1,
       scale: 2,
       windowWidth: event.view.screen.availWidth,
+      windowHeight: event.view.screen.availHeight,
       useCORS: true,
     }).then((canvas) => {
       var imgData = canvas.toDataURL("image/png");
@@ -53,14 +54,14 @@ export default function Dashboard() {
       var pageHeight = 295;
       var imgHeight = (canvas.height * imgWidth) / canvas.width;
       var heightLeft = imgHeight;
-      var doc = new jsPDF("p", "mm");
+      var doc = new jsPDF("p", "mm", 'A4', true);
       var position = 0;
-      doc.addImage(imgData, "jpeg", 0, position, imgWidth, imgHeight);
+      doc.addImage(imgData, "jpeg", 0, position, imgWidth, imgHeight,'','FAST');
       heightLeft -= pageHeight;
       while (heightLeft >= 0) {
         position = heightLeft - imgHeight;
         doc.addPage();
-        doc.addImage(imgData, "jpeg", 0, position, imgWidth, imgHeight);
+        doc.addImage(imgData, "jpeg", 0, position, imgWidth, imgHeight,'','FAST');
         heightLeft -= pageHeight;
       }
 

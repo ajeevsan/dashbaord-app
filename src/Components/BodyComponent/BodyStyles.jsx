@@ -11,6 +11,7 @@ export const useStyles = makeStyles((theme) => ({
   section: {
     margin: theme.spacing(1, 0),
     marginTop: "10px",
+    marginBottom: "10px",
     padding: "10px",
   },
   pageLabel: {
@@ -121,12 +122,19 @@ export const useStyles = makeStyles((theme) => ({
   },
   bigGraph: {
     width: "100%",
-    height: "500px"
+    height: "500px",
+    marginBottom: '10px'
   },
   stagedColumn: {
     width: "100%",
     height: "300px",
   },
+
+  //! Master Graph Styles for alignment
+
+  // masterGraph:{
+  //   margin: '5px'
+  // },
 
   //!footer
   footer: {
